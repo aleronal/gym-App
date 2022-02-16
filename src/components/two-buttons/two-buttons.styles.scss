@@ -1,0 +1,37 @@
+.two-buttons{
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.aws-btn{
+    margin: 0 50px;
+    --button-default-height: 64px;
+    --button-default-font-size: 19px;
+    --button-default-border-radius: 22px;
+    --button-horizontal-padding: 50px;
+    --button-raise-level: 7px;
+    --button-hover-pressure: 4;
+    --transform-speed: 0.225s;
+    --button-primary-color-light: #ffffff;
+    --button-primary-border: 0px solid #FFFFFF;
+    --button-secondary-color: #f2f6f9;
+   
+}
+
+.ale{
+    --button-primary-color: #2b96e9;
+    --button-primary-color-dark: #1360a4;
+    --button-primary-color-hover: #187bd1;
+    --button-primary-color-active: #2b96e9;
+
+}
+
+.estefany{
+    --button-primary-color: #E038A1;
+    --button-primary-color-dark: #da157a;
+    --button-primary-color-hover: rgb(219, 42, 151);
+    --button-primary-color-active: #E038A1;
+}
