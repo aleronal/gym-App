@@ -2,6 +2,7 @@ const GYM_DATA = [
     {
         id:1,
         title: 'Chest and Arms',
+        dayofweek: 'Monday',
         routeName: 'chestandarms',
         items: [
             {
@@ -37,6 +38,7 @@ const GYM_DATA = [
     {
         id:2,
         title: "Legs",
+        dayofweek: 'Tuesday',
         routeName: 'legs',
         items: [
             {
