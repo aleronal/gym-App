@@ -3,7 +3,7 @@ import './App.css';
 import {Route, Routes} from 'react-router';
 import Header from './components/header/header.component';
 
-import HomePage from './pages/homePage.component';
+import HomePage from './pages/homePage/homePage.component';
 
 const App = () => {
   return (

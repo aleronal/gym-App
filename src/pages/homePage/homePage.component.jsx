@@ -2,7 +2,7 @@ import React from 'react';
 import './homePage.styles.scss';
 
 // components
-import TwoButtons from '../components/two-buttons/two-buttons.components';
+import TwoButtons from '../../components/two-buttons/two-buttons.components';
 
 
 const HomePage = () => {
