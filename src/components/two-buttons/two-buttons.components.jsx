@@ -14,7 +14,7 @@ const TwoButtons = () => {
     const navigate = useNavigate();
 
     const onClick = (name) => {
-        navigate(`/${name}`)
+        navigate(`/user/${name}`)
       }
 
    
@@ -23,7 +23,7 @@ const TwoButtons = () => {
         <div className="two-buttons">
             <AwesomeButton onPress={() => {
             onClick('alejandro') }}
-            className="ale" size="large" type="primary" label="Alejandro">Alejandro</AwesomeButton>
+            className="ale" size="large" type="primary" >Alejandro</AwesomeButton>
 
             <AwesomeButton onPress={() => {
             onClick('estefany') }}
@@ -33,4 +33,4 @@ const TwoButtons = () => {
     );
 }
 
-export default TwoButtons
+export default TwoButtons;
