@@ -16,8 +16,8 @@ const WorkOut = () => {
     }) 
   
     return (
-        console.log(excersices),
-        <div>{excersices}</div>
+        
+        <div>d</div>
     )
 };
 
