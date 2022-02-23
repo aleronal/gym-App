@@ -1,37 +1,45 @@
 import React from 'react';
 import './excercise-preview.styles.scss';
 
+import {motion} from 'framer-motion';
+
+import Excercise from '../../components/excercise/excercise.component';
 
 const ExcercisePreview = ({items}) => {
 
-console.log(items.map(i => {
-    console.log(i.name);
-}));
-   
-
+    const boxVariant = {
+        hidden: {
+            x:"-200vh"
+        },
+        visible:{
+            x:0,
+            transition:{
+                when:"beforeChildren",
+                delay:0.5,
+                type:"spring",
+                stiffness:10,
+                staggerChildren:0.5
+                
+            }
+        }
+    }
+    
     return(
-        <div>this</div>
+        <motion.div 
+            className="excercise-preview"
+            variants={boxVariant}
+            animate="visible"
+            initial="hidden"
+            >
+            {
+                items.map(item => (
+                    <Excercise key={item.id} item={item}></Excercise>
+                ))
+            }
+        </motion.div>
     )
+};
 
-}
 
 export default ExcercisePreview;
 
-
-   // const [selectedId, setSelectedId] = useState(null);
-    
-        // <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)}>
-        //     <motion.h5>{item.name}</motion.h5>
-        //     <motion.h2>{item.reps}</motion.h2>
-        // </motion.div>
-          
-        //   ,
-        // <AnimatePresence>
-        // {selectedId && (
-        //     <motion.div layoutId={selectedId}>
-        //     <motion.h5>{item.subtitle}</motion.h5>
-        //     <motion.h2>{item.title}</motion.h2>
-        //     <motion.button onClick={() => setSelectedId(null)} />
-        //     </motion.div>
-        // )}
-        // </AnimatePresence>

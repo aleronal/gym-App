@@ -8,21 +8,21 @@ const GYM_DATA = [
             {
                 id: 1,
                 name: 'Chest Press',
-                image: "./images/chest/chest_press.jpg",
+                image: "../../images/chest/chest_press.jpg",
                 reps: 20,
                 times:4,
             },
             {
                 id: 2,
                 name: 'Barbell Bench Press',
-                image: "./images/chest/barbell-press.jpg",
+                image: "../../images/chest/barbell-press.jpg",
                 reps: 12,
                 times:4,
             },
             {
                 id:3,
                 name:'Dumbbell Bench Press',
-                image: "./images/chest/dumbell-press.jpg",
+                image: "../../images/chest/dumbell-press.jpg",
                 reps:12,
                 times:4
             },
@@ -38,34 +38,34 @@ const GYM_DATA = [
     {
         id:2,
         title: "Legs",
-        dayofweek: 'Tuesday',
+        dayofweek: 'Wednesday',
         routeName: 'legs',
         items: [
             {
                 id:1,
                 name:'Back Squat',
-                image:'./images/legs/backsquat.jpg',
+                image:'../../images/legs/backsquat.jpg',
                 reps:15,
                 times:4
             },
             {
                 id:2,
                 name:'Walking Lunges',
-                image:'./images/legs/lunges.jpg',
+                image:'../../images/legs/lunges.jpg',
                 reps:20,
                 times:4
             },
             {
                 id:3,
                 name:'Legs Press',
-                image:'./images/legs/press.jpg',
+                image:'../../images/legs/press.jpg',
                 reps:20,
                 times:4
             },
             {
                 id:4,
                 name: 'Treadmill',
-                image:'./images/legs/treadmill.jpg',
+                image:'../../images/legs/treadmill.jpg',
                 reps:20,
                 times:1
             }

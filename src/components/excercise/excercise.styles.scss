@@ -1,0 +1,52 @@
+.excercise-item{
+    width: 480px;
+    height: 140px;
+    background-color: #56789A;
+    margin: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-names{
+    height: 120px;
+    width: 250px;
+    margin:10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction:column;
+}
+
+.image{
+    width: 184px;
+    height: 140px;
+    border-radius: 50px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.name{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    color: whitesmoke;
+    
+    
+}
+
+.reps,.times{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    color: whitesmoke;
+    align-self: center;
+}
+
+.times{
+    align-self: flex-end;
+}
+

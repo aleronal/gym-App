@@ -12,6 +12,11 @@ import './user.styles.scss';
 
 const User = () => {
 
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    const d = new Date();
+    let day = weekday[d.getDay()];
+
     let params = useParams();
 
     const navigate = useNavigate();
@@ -28,7 +33,7 @@ const User = () => {
                 Welcome {params.user} your Gym Code it's : 12345
             </div>
             <div className="day-of-week">
-                Today it's <span className="day">Tuesday</span> so today it's Legs day!!
+                Today it's <span className="day">{day}</span> so today it's Legs day!!
             </div>
             <div className='start-workout'>
                 Click To Start the Workout
