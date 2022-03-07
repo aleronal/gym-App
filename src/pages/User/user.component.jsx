@@ -7,6 +7,7 @@ import {useParams,useNavigate} from 'react-router-dom';
 //awesome Button
 import { AwesomeButton } from 'react-awesome-button';
 import "react-awesome-button/dist/styles.css";
+import Button from '../../components/Button/button.component';
 
 import './user.styles.scss';
 
@@ -21,8 +22,8 @@ const User = () => {
 
     const navigate = useNavigate();
 
-    const onClick = (name) => {
-        navigate(`/user/${name}/workoutstarted`)
+    const onClick = () => {
+        navigate(`/user/${params.user}/workoutstarted`)
       }
 
     
@@ -38,8 +39,7 @@ const User = () => {
             <div className='start-workout'>
                 Click To Start the Workout
             </div>
-            <AwesomeButton onPress={() => {
-            onClick(`${params.user}`) }} className="workout" type="primary">Start WorkOut 🏋🏼‍💪🏼</AwesomeButton>
+            <Button handleClick={onClick} label="Start Workout"></Button>
 
         </div>
     )

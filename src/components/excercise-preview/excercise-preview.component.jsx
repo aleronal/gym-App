@@ -5,6 +5,7 @@ import {motion} from 'framer-motion';
 
 import Excercise from '../../components/excercise/excercise.component';
 
+
 const ExcercisePreview = ({items}) => {
 
     const boxVariant = {
@@ -25,18 +26,22 @@ const ExcercisePreview = ({items}) => {
     }
     
     return(
-        <motion.div 
-            className="excercise-preview"
-            variants={boxVariant}
-            animate="visible"
-            initial="hidden"
-            >
-            {
-                items.map(item => (
-                    <Excercise key={item.id} item={item}></Excercise>
-                ))
-            }
-        </motion.div>
+        <div>
+            <motion.div 
+                className="excercise-preview"
+                variants={boxVariant}
+                animate="visible"
+                initial="hidden"
+                >
+                {
+                    items.map(item => (
+                        <Excercise key={item.id} item={item}></Excercise>
+                   
+                    ))
+                }
+            </motion.div>
+            
+        </div>
     )
 };
 
