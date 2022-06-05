@@ -51,10 +51,19 @@
 }
 
 .yellow{
+<<<<<<< HEAD
     --button-secondary-color-dark: #1389BF;
     --button-secondary-color: #1389BF;
     --button-secondary-color-light: white;
     --button-secondary-color-hover: #1389BF;
     --button-secondary-color-active: #1389BF;
     --button-secondary-border: 2px solid #1389BF;
+=======
+    --button-secondary-color-dark: #f5c608;
+    --button-secondary-color: #f7cd2a;
+    --button-secondary-color-light: white;
+    --button-secondary-color-hover: #f7cd2a;
+    --button-secondary-color-active: #f7cd2a;
+    --button-secondary-border: 2px solid #f7cd2a;
+>>>>>>> bfaac2f094e33d0441d785b94783eb0d62d21d56
 }
