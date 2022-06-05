@@ -31,7 +31,7 @@ const User = () => {
     return(
         <div className="user-page">
             <div className="welcome">
-                Welcome {params.user} your Gym Code it's : 12345
+                Welcome {params.user} your Gym Code it's : 123456
             </div>
             <div className="day-of-week">
                 Today it's <span className="day">{day}</span> so today it's Legs day!!

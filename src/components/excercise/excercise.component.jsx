@@ -33,7 +33,7 @@ const Excercise = ({item}) => {
             >
             <div className="container-names">
                 <span className="name">{name}</span>
-                <span className="reps">{reps} Reps</span>
+                <span className="reps">{reps} Repss</span>
                 <span className="times">{times} Times</span>
             </div>
             <img className="image" src={image} alt=""/>
